@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        display: grid;
+        grid-template-columns: 2fr 3fr  1fr;
+    }
+    .menu{
+        display: flex;
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 15px;
+    }
+    .name{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .image{
+        filter: drop-shadow(16px 16px 10px grey);
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+    #det{
+        width: 450px;
+        height: 50px;
+        /* padding: 10px; */
+        margin-top: 20px;
+    }
+    #deti{
+         width: 450px;
+         margin-top: 20px;
+        height: 70px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+    }
+    .details button{
+        width: 120px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 335px;
+        background-color: brown;
+        color: white;
+        border-radius: 15px;
+    }
+    .over{
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+       /* margin-top: 20px; */
+    }
+    .over img{
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+    footer{
+        background: rgb(58, 7, 7);
+        margin: 0px;
+        padding: 0;
+        margin-top: 50px;
+    }
+    .lefticon{
+        display: flex;
+        margin-left: 50px;
+    }
+    .top{
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr ;
+        
+    }
+    .mail button{
+         background-color: rgb(255, 0, 0);
+         border-radius: 50px;
+         width: 120px;
+         height: 50px;
+         position: absolute;
+         margin-right: 30px;
+    }
+    .mail input{
+        width: 200px;
+        height: 45px;
+        border-radius: 50px;
+        position: relative;
+    }
+    .lefticon,.righticon,.mail{
+        margin-top: 100px;
+    }
+    .product{
+        color: white;
+        width: 100px;
+        padding: 50px;
+    }
+    .down{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .s{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .si{
+        color: white;
+        margin-left: 570px;
+    }
+</style>
+<body>
+    <header>
+        <div class="name">
+            <h2>DEPAK</h2>
+        </div>
+        <div class="menu">
+           
+             <p>Home</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <p>About</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <p>Product</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <p>Blog</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <p>Contact</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="icons">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAa1JREFUSEvN1k2ITlEYB/DfyKCkJsmONGShRFnZMaVYWJimbBTKR0nZSbEcSXZmarBhhZIppWYxC1YslFBmVvKVUkoWbCR06t5per13nnOne3ud7fPc/+88vZ1z3j49Wn09ci0GXoIRbCk2PYN7+FNniLrwTtzC5g5kFofxLBevAw9hCssqwn9gD57m4LnwSnzA6iD0IzbhZ4TnwsdxIwor6un3vx/15sLXcDIKK+pXcDbqzYWv40QUVtQncCrqzYXPYzQKK+rncDnqzYXTmX0dhRVneSPeRr25cMq5iSNB4FWcidBUrwMvL26o/RXBaWPH8LtpuNzoIRyYd6Y/4w4e5IBlT52J6+SGvf89vA7D2IoNWNox0i+8w0tM4lM0cjTxNlzCviioo/6wuL3Sq9V1LQSnm2oc/TXRsj09FEdxu9v3VfBB3F0kOP+zdLT2Yrozqxu8Fu+xogE4RXzFeqT3em51g8dwuiG0jLmAixH8BWsahp9jx0LwIN40jJZxq/C96uZKf+aetASno/mqCt6FRy3Bu/G4Ch7A9pbgF/hWBbdk/hsbXZmtbaRn8F8SWDwfL/V22AAAAABJRU5ErkJggg=="/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAexJREFUSEvt1k+oTVEUx/HPewPkT5h4xMyETIhCr4SElKJMmBiRoUQYiAGRSEaKmQEzoYT3MpABGfiTGBqQhJI/ZSChVfvoOK57zz73eW/g/erWPeestb5rrX322qfHCKlnhLhGwcPW+XKrD+HgPyR/wSZcD8ZwgoO3Byeq4OWIX2gV+tP/0/jQRSeWYUXyX4z7VXA59krcSje241wX4KtYj4+Yih/twLEELzETdxBZN9FYvMd4XMSWIki7fXwMe5PhLLxqQI4lG0x+W3G+DnguniXDAzjcAHwSu5LfNLyrAw6bB1iA55jdAByJRwERZ2HZv9PI3IlTpVa9yIBPxuVkH92Krv1SJ3C05zV6M4CtTOfjcQ44bK9hXUPwNxxBTMXf1KniMN6MC8nrKAYykoi1/dTKvg54XHobJ1b3YkYCf5jWAYfTWWzDd+zGw5rQGLWPmlYcflPwBDFIcnS7NP+z17hwWITjKVDdTg0JuEhgOubULLvrVhec2M+r0YdL+FxJIJLaiHud3oO6LSvi78CZdHEFG0rgiBUHyYx0L0ZtyxcrnueCb2BNCvwGUWGhJbhbut6POOFaKhe8DzFEQjexthR1DN4iZnRoaWr5kIAj0TilJuEpvlaiTsC89BERM/6vyq24XaysZ/8f+CfNukwfZEEv/wAAAABJRU5ErkJggg=="/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAmdJREFUSEvl1kuozVEUx/HPlWdKDCivkbxDXsk7JlIGRl5RQtzIAAMxM0JhYEAihvJKDBhISuQtJIq8856QQpK0ss/t79x77tld93QH9uTU/6zf77sfa+2167TRqGsjrhxwe0zEEPTAI1zHm3+ZdHPgvtiMxejWBOQqduJ4SyZQCbwIB9Alw/Qs5uNLRmxDSFPg5QkaQb9wGKdxB+8wBpOxCv2T001Mw7dceDl4FG6jHT5gDm5UMOuMg1iY/t+L1S0Fn8HsJJ6KS1WMIvEiZgJ+YjCe5sCLK+6F90m0HytzDDA67VKERzJuzdEVwQvSeYZuEq7kGKSY+xiOC5iZoyuC16fyCF1XfM0xSDFRAZGUb9EnR1cEb8S2JOqEHzkGKSZ0of+M7jm6IngpDiXRIDzOMUgxRzAvHU8cU9VRBI/E3aRYgz1V1X8COqSkjOt0H+pzdOV1/Ar9EL+x6u8ZJhuwI8VlJ2U5eC12J5PY9mVVwGNxGZETx9J2Z8xVo+7UMV0I45P6FNbhWZlbgFZge6qAuDwG4nkWVWNw6HriPEYUTKJO76WzHIeYWFyZMeJ+jnM+gS14mAOv1J2iK+1Kq4prsdKICS1BnHO0zxjRVDbhRXMTqPYQiO4ThrNSskVfjofAORzFrWQ+FA8KoHgkRLd6UgleDZyza6WYk5hbEMQEp6dW2sinNcFRftGpIkdKI8pyCl6Wk1sTHN5xNNEoBhRAsd0z0t3Q8Lm1wSX4NfQuwF+n9vmx9K0W4PCOmo6LpbTt0aOjV9d0xSXzYbiYHgbxGv1r1GrFJUi0yE9NlUatwRXL8f8D/wbso2YfcIMr0AAAAABJRU5ErkJggg=="/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </header>
+
+    <div class="title">
+        <h1>CONTACT US</h1>
+    </div>
+    <div class="content">
+        <div class="image">
+            <img src="product.png">
+        </div>
+        <div class="details">
+            <input type="text" id="det" placeholder="Your Name">
+            <input type="text" id="det" placeholder="Phone Number">
+            <input type="text" id="det" placeholder="Email">
+            <input type="text" id="deti" placeholder="Message"><br>
+            <button>submit</button>
+        </div>
+    </div>
+    <footer>
+        <div class="top">
+        <div class="lefticon">
+            <div class="over">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAv1JREFUSEvFllmojmEQx39/ZCt7hGQrS5aIEhdOSCiRJReiEEXcyBYlJVmKwxXliE5y5UYpQspabjiWbKVkywUSN7LEaL7mPX0+7/u973duztw9zzPP/Gfm+T8zI1pJ1Eq41AxsZoOACcBgwIBXQJOkN7UEUQjYzFxvLbAJGJYB8Bw4BJyS5A5VlVxgM+sPnAMm5RmL81vAIkmfqulXBTaz4cB1oF8YeQo0AA+AJ7E3BhgPrANGxJ6nv07S2yzwTGAz6wrcLUvtLmCvpD9pxsysHbAP2Brn94Epkn6k6VcDPgMsi0sbJB1LDJiZE2tlrBsleYQlMTN3cHcs6yVtKQxsZpOBO3GhQZITq1nMbBpwLTamS/LnKD93TiwAPDsjJb2oBE+N2MyOABvjYl9JH2sEHgk8izvbJB0sCvwYGA1ckTS78lJexJFyJ9+oLBtZEX8GegCHJW0OQ+Xp7A6MC4ceAl8S5yT5M/hbNwIrvMBIGlI0Ymdi+2DxzjCUWxRcT1IpGDPbD2wHvkvqVBT4NTAQOClpTQsjPgWsAl5L8l/wj2Sl+iYw1ZkraUYL3zixcSNJf7mdLOATgEfq36GnpK81sroX8AFoAxyX5FWtUMSzgMuhuVqSp638n+b94/XA0bjw3z8vcaHSk3jPtsB7oA/wDhgq6Veim1O5Oker7B02BqR1q2ol09m8J8BSi0CG016vd8TZFkn1aXrVgDsALwFviz+985TX5AxQ/9tN8bZ+18tlc6ZyyVWW0iXA2Vg/im7zLQPUC849ICkWcyVdTNPNfOMKIjlJnCwu56PJ/67Q6RhkrIv9A5KSdKdiF5lAnGiXgJlhwTOwNOnLZuagF4Dkv3tnWpw3/uQCB8udqV4QJgZ4qVWamf9TB5of+1cBT7FzoqoUAg7wbjEG+ZjjchroAiyMtc9acySlcqDSi8LAAd4zwMdWGLoNzC4KWohclZ6ambdEr2rJ1OnpnSfpe156y89riji5GIPd8qjlZ7IGwGqOtAi4lsiydFsN+C8qszEu4KYtdQAAAABJRU5ErkJggg=="/>
+                
+
+            </div>
+            <div class="over">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhlJREFUSEvFlrmKFVEQhr9fMHDFQBCXUHCJBBFRBkdFHZhANNLBxNyHUB/CBxAMxkQz9z1wYQxMVBDM3BEF12DAkh9OS0/bfWf6dF/uye49ff6v6lSdqhIjWhoRl//AEeH/JoHtwKKOhv0Bnkq6UtWpA18GjnQEVo9PS5oq/zkHHBFbgec9Qwu5jZJeFz+q4L3A3SGB90m6lwN+AWwAVjYY9g14C2xp2B8IHgf+WVUSeAfsANam/eUV8R+Az34EngDra+BZHk9JmrZYROwCbgNLkvhP4ICkx2n/BHChL7CvcVzSsyS+B7gO+Lnsl2QvbZRv5VZDOLI8tu534FDJswlgVtKdBN0NXANW5MR4vqx2LCckPSyLR4TPuUgU11/Hzva4EPvq7Jb0K3m6FPgwwNPiXCfwSDx2jH3Nj5KnB51PkpxMTizH+AawrM8Y+3qdvUVWjwE3E8DGPBhWVg96x7+TUZ3ecVPlcincCawB7gN1lcuZ/R6YAdb1VUCs41ptwVUNMfwCfAI29xnjPhrWwOdka1/2QanR2CTpVW1bTJl5CTjaM/yipONlzaaZ6zCwDebMZKuBU/MYdA74XPrGTWRG0tXquVZTZkScAU43wM9K8v6CVitwCoX78rGK+nlJJxdETB/lgBennuue7OWSOSlpdqjg5LXnLjd/w8YkeVBotVp7XKhHhAc/JL1pRcy96hxI3Zlsj7sa8BeJDewfLNeMigAAAABJRU5ErkJggg=="/>
+            </div>
+            <div class="over">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAudJREFUSEvFlluITlEUx39/t4goD5Nc3lwGJc1IQiiXBzy4DjFNHuTyILk9uKQkpVyahMKboZgJ5UU8iMYDY4ykBlGilITcSh5YWtP+6syec77vzEfNeTtrr71+e629Llv00Kce4vLPYDNbA/QG3gAPJf3M48z/AN8DZgTYH6AFqJd0udgBMsFmtgfYBpyUdCDLiJklwUk1ly+R9CltbxewmfUHzgMrExv2SzqYZsDMBgCjgSpgObAI6BV0XwBzJb2L93YCm9lA4DYwNQWySdKZUvdnZn6IU8CCoPsMmC7pS3JvDPa78hClOgesktSUXDSzdcBIoEmSe4iZud2jwPage03SsmLgWcDdIl79BhZKulXQMbM7wOzwfxPYK+lROMBVYGlYq5bUVtgXezwJeFIinF4uVZKeB+NJcIcImCapxcxGAK+BvkCDpLos8BCg011kHGKXJA+lh9WTazywGVgf9NskVYf1BqAW+AhUSPKDdW0gZvYWGFXE68fAHEnfYh0zqwe2BvlESe2hwVwMssmSOiKaVk5e+DUZ4FZgfpyhift2z9vDf52kBjOrBDyz/aspJGcaeC1wIQX8IEC/Z0UjhP1GWD8tqTGSnSoG9nv+APSLAGMlvSyReLmXU1ummXmj2BBZ2SHpeG7LJRSzwBOAp4nW52a+ApWS3qfZNLMKwCdVc6GOi7GLDYlkhhZs+GE8oz8njZrZ0NDxPLm8ydRKulQueBDgLXB4ZMBliyW9CnXq/d2byJRIb6Oks1nwovPYzLwJNAPeJJKfz91zwGHA86EwEGLObkmu0+Ur+RAws8XA9bSaz5loPs+3xLolwSGcq73XAn1ywmK1Y5J2JoW5wAHu4WwEvM67+/0ABhf6tG/ODQ7wYcCJ6HWS5xD7JB0qy+OofGYCR3z85aBekbSirDvOMm5mY4B5/jjwt1VK9t8Pdf/rv4KjKPjbepzP3IS8VZLfb/fLKUcoy1LpVnKVRcjY1GPgvwn++R9mg4CvAAAAAElFTkSuQmCC"/>
+        </div>
+        </div>
+        <div class="mail">
+            <input type="text"> <button>subscribe   </button>
+        </div>
+        <div class="righticon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAyJJREFUSEvtll2Ip2MYxn+XkNlQWNqWKROiMUMz5TNTU3PAgQOFLaEUG7s7OHA0PibMkvJR2hhlTjiQJUniQEqxhHzsLkeMnaxE1DbbMj4Wl67p+Y/3/87710zKzMHeR+/7vPdzX8993dd9P69YIdMK4XII+H9jfnVTbbsf+A2YkXSwEy22jwTOBnZL+vPf6OuYse1u4GZgA3BGCfILcD/wmKTfW4FtnwncDVwJdAE/A28DD0t6q+kAjcC2TwbeB07pcOoPgMskzdq+HHgZOByYA74EzoH5jsn7iKTEarNFwLaPB94FziqeXwGvA4PAxSVgPiWTW4GPgKOAR4FxSXMlxlPA1cA+4AJJ01XkJuBJ4JbiNClpc4XSC4FXgbVl7SfgaGBC0ng1sO1jgF1AD/C8pGs6Ats+Afim1CmbBiX9VQt4OvAhcFxZ/wLoaxKd7ehjOxCh9UhK7Hlry9j2ncAD5dsNkp5pqrHtUWBbRXCnSfqu7ms7df8WOKkI8o5FwDWn1GW9pLRQmxW/z4EouWVTkjZ2OOSDwBgwLanVHf9kbHsA+KRsXlSTSp1Ty/uKaNJS64CU43xJHzccdLgIMT5drTZcoLq0RYQT2yrpnoYgvcBO4AggopsFnit+0cSAJNc0kXmwt6z1SwpbbRlnWKQFYo31tf0OcAmwJ+0WQdnOoBgq+0YlPVEDPgz4tRx2g6QX68BVYQ1J2lELcCMwVdaukPRKnm33lbYJQAZGr6Sva3tngFOBuySl5m0Z3wY8XjZcKumNSl0jpE9Lm+2Q1Mpw3sX2I0BLsWFguEq57f3AscC9kqKPNuAR4M0CtqBS2ycC7wHp31B2rqT07oLZznzeXXyyngk2UQ51Udmf16skvVQHXgN8D2TixF4DPku9i3KztkXSk1XQCivnASlPbqjYC8APwLVl2CTrbkkH2oDL6a4Hnm0K3DT26n62bwKe7rD/IUnp53lrmtWb0k5ALotYWiaiGpP0R4egVdqvAzLvM8Nblil3e7Xuna7FrEetSArdy7LKD0FurUysH+sBVvevz7LSXaLzoYyXSNR/d1sxqv8GZR4hLvTmwoAAAAAASUVORK5CYII="/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAVlJREFUSEvtlb1KxFAQhb+jVnb2PoPgG4goirJoYSEKlrZa+EAWaiEiInY2omCjqK/iD/5gMTLhLiyym8wmwVjkdiE3880599yJaGipIS4t+M+cb63+P1ab2QRwBuxIesrrzMzmgV1gVdJ33t7cMzazEeARmAKegVlJD/0KmlkHOAXGgAtJ/jxwFYbLzLaAfcju/AswJ+mut6KZLSdXHPoFdCRdVgL7x7/gb0l5Bu8DXZR0VRSWQsXdAma2Dhwl5RkcmASOk70fwFIE6jXD4KRuAzhMzTh8HPAcfAILkq6LlHbfDwVOcFd+AIymIq7Uz/02Ch1acWNgM9tMar2HXqvfAQ/VTVR12OpAuPwahRIdtrqR61RygBQqj4zMe2AaeAVmgiPzXNJKpcmVfhInwJ4kn9sDV5pi28BapZ9ENKFl9oVTXaZ4JavrBpYemXU10lpdl5OFdRqz+gdMsYQfRYLE+QAAAABJRU5ErkJggg=="/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZpJREFUSEvtlk1LVVEUhp8HHEQ00aER9IF/wEAbhFQkBDXrN4SSfQ2KBiGBg4ga1CBy5F9oFIRk1FhQxGkWBNWwhCbdSSu2nBunBVcn+6Kga3bO3ns96+vd58gumbvEZe+AI+IIcAUYBpbU9X5U5b+MI2IQWAWON7AArqkLteEZPA3MJ8gXtRtINX4GPwduJ+8d9VA1YuMogy8BbxLknXqxr+DiPCJuAdeBo8Bb4Ib6ve/g2oBe/qrqOCKGgBHgm/p1uyRyj08An9OBl+pM04a7wNO0XiQ4ATwERltrv4BFYEr9kYOoAb4DFDX0sg1gTP3Z3lAD/BvYSW4P1Ee1wcXfH+ATUKa/lD3Pzqp6uja4ZHxWXWnm4Fwjw4EWqAR2WO1039Uo9Qv1ZjubiHgNXE5NH1FLv7esBviq+iqBnwFl6No2ri7XBE+qSwk8C8wl8Hn1Qy/wyWZI2mfm1XKFluv0HvAkObygvk/g+8DjA/BBqf/NQETsv+Eql/2ZJIPybf3YyOkYcCqtr6mbSU477qv6I5AC2vZx/4H/AhjlDC59ah7gAAAAAElFTkSuQmCC"/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAodJREFUSEvllkuIT2EYh5+fLBTlsnBpwkJCzYiG+hszDGWlXMrGigZlMRY2yGVDyGVmZRZkUsrKxoSNhXEbTOQSJtcFCZE0oZR49U3fTGeO7ztnjr8a5d2cOuf9vc95v3Peixgk0yBx+bfBZjYBmAoMyTmhH8BzSW/zTjKasZmNBw4BS4HReYFSzz8B54EtsZcIgs1sOXAKGF4QmHb/AqyWdC794DewmY0DngAjy4T2yj8C0yS5a5+FwK1AQxnQF8BQYHIixnFJG6JgM3MC931G/CH4nqTZTmtmD4BKH+czMErSz964/TI2s0nAyxyoy+gg8BRw/iVgJeB+xiT4LjArEWuspA8xcDVwOwO8FWiS5Mqmz8zM/Q9NwDrgGfANqErFqZT0KAZeCFyKgBsltXjIJmCO97sFHJHUbWbNwOaIviSpMwZeAlwICDsk1fradmJ3xEl75Y/1K3AfmB6IUSPpRlHwGkknzeyAawqRjPZJ2mFme4CdAZ/5kq4XBddK6jCzM4BrLiFrk7TCzFYBpwMOCyRdjYEXARcDosWS2ssE10u6HAPXA+0B8EZJR81sP7At56j3AtsDPnWSrhUFd0oq+Sl1M+Pn+g48BioC4HmSnLbH0g2kDrgygHJqBOYGyukY0K81JmJVS7oTA8/05RBh4xrI4WTrc46pBhLTVkl6GAO7yfQupvT33eRy39q1VlfPNcAywC0LWVYh6U0Q7N/+deQb5cTNfNwNjIkOCQ/eBewuhxLQtkpan7wfmsduNHb5Hetv8F22U3IXAZ/1RKAN6JmtZVqDpBPpGFnL3jCgBVg7gO0yHdcN/LNAs6Rgeebu1X4Hm1Ew6y5J77M0ueCCwAG7/3/gX6mT7x/oRoY2AAAAAElFTkSuQmCC"/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAc1JREFUSEvtljFoFFEURc9FQQgGLWyWNBJJOtOkEwsbQ1gxliklhCgEDIGYxuAqMYmFFoqNhViktFKQBAULsRUkqAQRU1lIinTRIsqTt8wMu9+E+bvsuFvsa4aB9++Ze+f9mS/aVGoTly74vyXfOVGb2WHgInAG2E0iOAEMAEdyIvkJfAL86mXABvBS0u/atXWOzWwIeAGcbHHmW8CYpM+pbgh+B5xtMTSVeyVp9B+wmfUB3wuCprIlST/8JnNsZueB1wWDz0l6G4IngKcRYJ+BfuB0RG/YMi7pWQieA+5HiFWAZWASWAF84mNrStKTEHwbuBWhUJF0p7pXzI4Di8A0cChi7YykRyHY3brrvMrAaaOZDQIPgWxqDxCZl1RNtXa4loCFPCpwU5L3ZmVm/nF5AJRz1t+QdLfZqDOwmfUmUV+LjHpWkidT5/g6cC/GcTJUVwB/140M12VJqyH4KvA4AvwcONXkdipLWg/BlwAXLbKGJH0MwT6ZX4qkAj2SftWBk335HhguCL4m6UKqHf6dHPoGONZi+Df/x0va3BecuD4KjAA7yWHAv8mlBh9kG/gK7AEfkoPAn1qNzjn6NOis6fau46aja3Rh26L+C56IgR+mMeYWAAAAAElFTkSuQmCC"/>
+
+        </div>
+        </div>
+        <div class="down">
+            <div class="product">
+                <h2>product</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo provident magnam natus culpa </p>
+            </div>
+            <div class="product">
+                <h2>shop</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo provident magnam natus culpa </p>
+            </div>
+            <div class="product">
+                <h2>company</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo provident magnam natus culpa </p>
+            </div>
+            <div class="product">
+                <h2>myaccount</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo provident magnam natus culpa </p>
+            </div>
+            
+
+        </div>
+        <div class="si">
+            <p>____________________________________________</p>
+        </div>
+        <div class="s">
+            
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA75JREFUSEvFl2nIVVUUhp83QQpRiqhMaDAbrB9BlKVSFFL4S0FNqH4IBU2EFjlkM6SGDeQsKhiEoEQDRFJRIZLYICJCakgWVhplA5ZEltmS97JOnXu+c+53Pwtcv+7Ze6397r3Wu4YrTpDoBOHSJ+CIOAm4GrgAGJKX/hb4AtgiKbp9SFfAEXEe8AgwCTi94fAfgFeBpyXt6+0CHYEjoj/wODAL8O9u5A9gXl7gaJNBI3BEnA28AYxI47+A14G3ge3A3lwfClwJ3JQe6ZfrHwATJf1UB14LnK79GBicRu8D90hyLBslIoYDK4DrU+lLYKQkh6FNegBHxKnAVmBYas6T9Fg3PrZOEvAF4P602QZcK+n38hl1wC8Ct6fSHElPVEEjwnaXpEcOSNpVo7MUuC/Xn5X0UCNwRFwE7IZWmr0HjC2nSESMBmYDY4ABpYO+AhYBiyW1CBURjvVHyZHDwPmSvi9s2l4cEauAO20HXCrJl2hJRNyV8euUCTdLeq1kMwr4ML+fkvRkD+C8oUlwmvNR0uTSAVcBJptf4ReZQBuBH4Er0qXrJDn12iQiNjnGwB5J9mhL/rl9RJiJPswySZJTp3itU+M64G9glKQt5dNNSEkHq6DpqakOQe5dLOnzKvAU4KVUOFfSN2l4JlDEZrmkgjB1OD3WIsI57iyxjJf0ZhV4BvBcKvSXdCSBTajNuX6LpJe7QvzXWw7dz/n5gCSTsM3V04HnU2GQpEMJXL7xbZLW9RF4EPBL2kyX5BxvA74VWJsKwwtGR8RA4NdcXyXp7j4CXwbsrHqsTK6RmXfWmSJpTQEQEe9mLW4i12BJ3zWQ6w5gde6NkNSKdxnYvdbGZwDrJY0rAdvdn2Q6uVksA8x0E8/1fCawUNKjVfCIcCG6EdgPnFMUpGoBWQ7cm8aXS/q0BN5NAZksyT25JRHhzlak3gJJDxZ7VWAn+Gf5sg2+aaVkuhB4ILgBOKX0OrfIJS6blZJprzgr7KWh5QGhrkk4Ho6LZW5DNXJY3ALt6v1FUSi7OSJcNFw8LEskTSvv1wE77+yeCzuBNzE72+LCEuiO7Mm/dQTO2HiqcGc5K5XfcewlFVNHLW5EOHVWZm22ztfANXWM7zT6eIpcn03Ah/wJuPO8BZh0e3IO8yVNIjN3IuAwWNwcPPq4kfSQ3oa9kwG3MqdLMUs1eblY97A3B5hfEK3PwIVBDggPAxMAj0Z14kbyCvDMfx5vq6dnz3Zz95ztKdQDgwd6u33r/z7Q9+bb49nv6p/E8Rzcm80xXk1cLtPetcIAAAAASUVORK5CYII="/>
+            <p>2023 All Rights Reserved. Free html Template</p>
+        </div>
+    </footer>
+</body>
+</html>
